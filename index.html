@@ -1,145 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
-    <header>
-        <div class="leftLogo">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-            <img height="24" alt="" src="https://www.gstatic.com/youtube/img/creator/yt_studio_logo_white.svg"/>
-            <h1>Studio</h1>
-        </div>
-        <div class="rightLogo">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"></path></g></svg>
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path></g></svg>
-            <div>CREATE</div>
-            <img id="img" alt="" height="32" width="32" src="https://yt3.ggpht.com/ytc/AKedOLTqdwEtKQFBWRLMM7ZdZ84JCoLpJlZ9ey8QUw=s48-c-k-c0x00ffffff-no-rj">
-        </div>
-    </header>
-    <main>
-        <section class="leftClipboard">
-            <div class="userLogo">
-                <img id="img" class="" alt="" height="32" width="32" src="https://yt3.ggpht.com/ytc/AKedOLTqdwEtKQFBWRLMM7ZdZ84JCoLpJlZ9ey8QUw=s48-c-k-c0x00ffffff-no-rj">
-            </div>
-            <h2>Your channel</h2>
-            <p>Information technology</p>
-            <div class="logo-container">
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div>Dashboard</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div>Content</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M19 9H2v2h17V9zm0-4H2v2h17V5zM2 15h13v-2H2v2zm15-2v6l5-3-5-3z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Playlists</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Analytics</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Comments</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 12h4v2H4v-2zm10 6H4v-2h10v2zm6 0h-4v-2h4v2zm0-4H10v-2h10v2z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Subtitles</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91 1.05.34 1.7.34c.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Copyright</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Monetization</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M0 0h24v24H0z" fill="none" class="style-scope tp-yt-iron-icon"></path><path d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7zm12 9.8L17 14l1.4 2.5L17 19l2.5-1.4L22 19l-1.4-2.5L22 14zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5zm-7.63 5.29c-.39-.39-1.02-.39-1.41 0L1.29 18.96c-.39.39-.39 1.02 0 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05c.39-.39.39-1.02 0-1.41l-2.33-2.35zm-1.03 5.49l-2.12-2.12 2.44-2.44 2.12 2.12-2.44 2.44z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Customization</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 5h-3v5.5c0 1.38-1.12 2.5-2.5 2.5S10 13.88 10 12.5s1.12-2.5 2.5-2.5c.57 0 1.08.19 1.5.51V5h4v2zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Audio library</div>
-                </div>
-            </div>
-            <div class="bot-logo-ctr">
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                    <div class="logoName">Settings</div>
-                </div>
-                <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z" class="style-scope tp-yt-iron-icon"></path></g></svg>
-                </div>
-                <div class="logoName">Send feedback</div>
-            </div>
-        </section>
-        <section class="rightClipboard">
-            <div class="top-channel-wrapper">
-                <div>Channel dashboard</div>
-                <div class="icon-container">
-                    <div class="icon">
-                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g transform="translate(5 3)" class="style-scope tp-yt-iron-icon"><path d="M4 13h6V7h4L7 0 0 7h4z" fill="#909090" fill-rule="evenodd" class="style-scope tp-yt-iron-icon"></path><path d="M0 15h14v2H0z" fill="#f00" fill-rule="evenodd" class="style-scope tp-yt-iron-icon"></path></g></svg>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Youtube studio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="leftLogo">
+				<!-- <div class="svg"> -->
+					<svg
+						viewBox="0 0 24 24"
+						preserveAspectRatio="xMidYMid meet"
+						focusable="false"
+						class="svg-logo op"
+					>
+						<g>
+							<path
+								d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+								class="style-scope tp-yt-iron-icon"
+							></path>
+						</g>
+					</svg>
+				<!-- </div> -->
+				<div class="imgLogo">
+					<img
+						alt=""
+						src="https://www.gstatic.com/youtube/img/creator/yt_studio_logo_white.svg"
+					/>
+				</div>
+			</div>
+			<div class="rightLogo">
+				<div class="svg">
+					<svg
+						viewBox="0 0 24 24"
+						preserveAspectRatio="xMidYMid meet"
+						focusable="false"
+						class="svg-logo op"
+						
+					>
+						<g>
+							<path
+								d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"
+							></path>
+						</g>
+					</svg>
+				</div>
+				<div class="create-ctr">
+                    <div class="svg pad">
+                        <svg
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            focusable="false"
+                            class="svg-logo red" 
+                        >
+                            <g class="style-scope tp-yt-iron-icon">
+                                <path
+                                    d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"
+                                ></path>
+                            </g>
+                        </svg>
                     </div>
-                    <div class="icon">
-                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope tp-yt-iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope tp-yt-iron-icon"><path d="M23,12a11,11,0,0,1-3.22,7.78l-1.41-1.41a9,9,0,0,0,0-12.73l1.41-1.41A11,11,0,0,1,23,12ZM5.64,5.64,4.22,4.22a11,11,0,0,0,0,15.56l1.41-1.41a9,9,0,0,1,0-12.73ZM16.95,7.05,15.54,8.46a5,5,0,0,1,0,7.07l1.41,1.41a7,7,0,0,0,0-9.9Zm-9.9,0a7,7,0,0,0,0,9.9l1.41-1.41a5,5,0,0,1,0-7.07Z" fill="#909090" fill-rule="evenodd" class="style-scope tp-yt-iron-icon"></path><path d="M12,9a3,3,0,1,1-3,3,3,3,0,0,1,3-3" fill="#f00" fill-rule="evenodd" class="style-scope tp-yt-iron-icon"></path></g></svg>
+                    <div class="create">CREATE</div>
+                </div>
+				<div class="userImage">
+					<img
+						alt=""
+						src="https://yt3.ggpht.com/ytc/AKedOLTqdwEtKQFBWRLMM7ZdZ84JCoLpJlZ9ey8QUw=s48-c-k-c0x00ffffff-no-rj"
+					/>
+				</div>
+			</div>
+		</header>
+		<main class="main-ctr">
+			<section class="leftClipboard bg">
+                <div class="user-info">
+                    <div class="userLogo">
+                        <img
+                            id="img"
+                            class="profile"
+                            alt=""
+                            src="https://yt3.ggpht.com/ytc/AKedOLTqdwEtKQFBWRLMM7ZdZ84JCoLpJlZ9ey8QUw=s48-c-k-c0x00ffffff-no-rj"
+                        />
                     </div>
+                    <h2 class="mgb col fonts ta">Your channel</h2>
+                    <p class="col op2 ta fonts2">Information technology</p>
                 </div>
-            </div>
-            <div class="wrapper">
-                <div class="inner-wrapper">
-                    <div class="image-container">
-                        <img src="https://www.gstatic.com/youtube/img/creator/no_content_illustration_upload_video_v3_darkmode.svg" alt="no_content_illustration_upload_video_v3_darkmode"/>
-                    </div>
-                    <p>
-                        Want to see metrics on your recent video?
-                        <br>
-                        upload and pulish a video to get started.
-                    </p>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div>Channel analytics</div>
-                <div>Current subscribers</div>
-                <div>0</div>
-                <div class="breakline"></div>
-                <div>Summary</div>
-                <div>Last 28 days</div>
-                <div>
-                    <div class="view">Views</div>
-                    <div class="number">0</div>
-                    <div class="rate">-</div>
-                </div>
-                <div>
-                    <div class="watch">Watch time(hours)</div>
-                    <div class="number">0.0</div>
-                    <div class="rate">-</div>
-                </div>
-                <div class="breakline"></div>
-                <div>Top videos</div>
-                <div>last 48 hours .Views</div>
-                <div class="refer">GO TO CHANNELANALYTICS</div>
-            </div>
-            <div class="wrapper">
-                <div>Creator Insider</div>
-                <div>
-                    <img src="https://www.gstatic.com/youtube/img/promos/growth/538bb58eea9ede2fa2ae5f01fed8d889daf467a653d6bc2980d86edef97703be_1280x720.jpeg" alt="538bb58eea9ede2fa2ae5f01fed8d889daf467a653d6bc2980d86edef97703be_1280x720">
-                </div>
-                <div>This Week at Youtube</div>
-                <div>
-                    Hello Insiders! Today we're touching on a few launches for Shorts as well as multi-image posts for iOS, April Shorts Fund, and Video Sorting Update
-                </div>
-                <div>WATCH ON YOUTUBE</div>
-            </div>
-        </section>
-    </main>
-</body>
+				<div class="logo-container">
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class=""
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div>Dashboard</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class=""
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div>Content</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M19 9H2v2h17V9zm0-4H2v2h17V5zM2 15h13v-2H2v2zm15-2v6l5-3-5-3z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Playlists</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Analytics</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Comments</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 12h4v2H4v-2zm10 6H4v-2h10v2zm6 0h-4v-2h4v2zm0-4H10v-2h10v2z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Subtitles</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91 1.05.34 1.7.34c.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Copyright</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Monetization</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M0 0h24v24H0z"
+									fill="none"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+								<path
+									d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7zm12 9.8L17 14l1.4 2.5L17 19l2.5-1.4L22 19l-1.4-2.5L22 14zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5zm-7.63 5.29c-.39-.39-1.02-.39-1.41 0L1.29 18.96c-.39.39-.39 1.02 0 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05c.39-.39.39-1.02 0-1.41l-2.33-2.35zm-1.03 5.49l-2.12-2.12 2.44-2.44 2.12 2.12-2.44 2.44z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Customization</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 5h-3v5.5c0 1.38-1.12 2.5-2.5 2.5S10 13.88 10 12.5s1.12-2.5 2.5-2.5c.57 0 1.08.19 1.5.51V5h4v2zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Audio library</div>
+					</div>
+				</div>
+				<div class="bot-logo-ctr">
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+						<div class="logoName">Settings</div>
+					</div>
+					<div class="logo">
+						<svg
+							viewBox="0 0 24 24"
+							preserveAspectRatio="xMidYMid meet"
+							focusable="false"
+							class="style-scope tp-yt-iron-icon"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 100%;
+								height: 100%;
+							"
+						>
+							<g class="style-scope tp-yt-iron-icon">
+								<path
+									d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"
+									class="style-scope tp-yt-iron-icon"
+								></path>
+							</g>
+						</svg>
+					</div>
+					<div class="logoName">Send feedback</div>
+				</div>
+			</section>
+			<section class="rightClipboard">
+				<div class="top-main-wrapper">
+					<div class="top-channel-wrapper">
+						<div>Channel dashboard</div>
+						<div class="icon-container">
+							<div class="icon">
+								<svg
+									viewBox="0 0 24 24"
+									preserveAspectRatio="xMidYMid meet"
+									focusable="false"
+									class="style-scope tp-yt-iron-icon"
+									style="
+										pointer-events: none;
+										display: block;
+										width: 100%;
+										height: 100%;
+									"
+								>
+									<g
+										transform="translate(5 3)"
+										class="style-scope tp-yt-iron-icon"
+									>
+										<path
+											d="M4 13h6V7h4L7 0 0 7h4z"
+											fill="#909090"
+											fill-rule="evenodd"
+											class="style-scope tp-yt-iron-icon"
+										></path>
+										<path
+											d="M0 15h14v2H0z"
+											fill="#f00"
+											fill-rule="evenodd"
+											class="style-scope tp-yt-iron-icon"
+										></path>
+									</g>
+								</svg>
+							</div>
+							<div class="icon">
+								<svg
+									viewBox="0 0 24 24"
+									preserveAspectRatio="xMidYMid meet"
+									focusable="false"
+									class="style-scope tp-yt-iron-icon"
+									style="
+										pointer-events: none;
+										display: block;
+										width: 100%;
+										height: 100%;
+									"
+								>
+									<g class="style-scope tp-yt-iron-icon">
+										<path
+											d="M23,12a11,11,0,0,1-3.22,7.78l-1.41-1.41a9,9,0,0,0,0-12.73l1.41-1.41A11,11,0,0,1,23,12ZM5.64,5.64,4.22,4.22a11,11,0,0,0,0,15.56l1.41-1.41a9,9,0,0,1,0-12.73ZM16.95,7.05,15.54,8.46a5,5,0,0,1,0,7.07l1.41,1.41a7,7,0,0,0,0-9.9Zm-9.9,0a7,7,0,0,0,0,9.9l1.41-1.41a5,5,0,0,1,0-7.07Z"
+											fill="#909090"
+											fill-rule="evenodd"
+											class="style-scope tp-yt-iron-icon"
+										></path>
+										<path
+											d="M12,9a3,3,0,1,1-3,3,3,3,0,0,1,3-3"
+											fill="#f00"
+											fill-rule="evenodd"
+											class="style-scope tp-yt-iron-icon"
+										></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="inner-wrapper">
+							<div class="image-container">
+								<img
+									src="https://www.gstatic.com/youtube/img/creator/no_content_illustration_upload_video_v3_darkmode.svg"
+									alt="no_content_illustration_upload_video_v3_darkmode"
+								/>
+							</div>
+							<p>
+								Want to see metrics on your recent video?
+								<br />
+								upload and pulish a video to get started.
+							</p>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div>Channel analytics</div>
+						<div>Current subscribers</div>
+						<div>0</div>
+						<div class="breakline"></div>
+						<div>Summary</div>
+						<div>Last 28 days</div>
+						<div>
+							<div class="view">Views</div>
+							<div class="number">0</div>
+							<div class="rate">-</div>
+						</div>
+						<div>
+							<div class="watch">Watch time(hours)</div>
+							<div class="number">0.0</div>
+							<div class="rate">-</div>
+						</div>
+						<div class="breakline"></div>
+						<div>Top videos</div>
+						<div>last 48 hours .Views</div>
+						<div class="refer">GO TO CHANNELANALYTICS</div>
+					</div>
+					<div class="wrapper">
+						<div>Creator Insider</div>
+						<div>
+							<img
+								src="https://www.gstatic.com/youtube/img/promos/growth/538bb58eea9ede2fa2ae5f01fed8d889daf467a653d6bc2980d86edef97703be_1280x720.jpeg"
+								alt="538bb58eea9ede2fa2ae5f01fed8d889daf467a653d6bc2980d86edef97703be_1280x720"
+							/>
+						</div>
+						<div>This Week at Youtube</div>
+						<div>
+							Hello Insiders! Today we're touching on a few
+							launches for Shorts as well as multi-image posts for
+							iOS, April Shorts Fund, and Video Sorting Update
+						</div>
+						<div>WATCH ON YOUTUBE</div>
+					</div>
+				</div>
+				<div class="bottom-main-wrapper">
+					<div class="studio">
+						<div>What's new in Studio</div>
+						<div>
+							<div class="permission">
+								New Subtitle Editor permissions level in YouTube
+								Studio
+							</div>
+							<div class="iron-icon">
+								<svg
+									viewBox="0 0 24 24"
+									preserveAspectRatio="xMidYMid meet"
+									focusable="false"
+									class="style-scope tp-yt-iron-icon"
+									style="
+										pointer-events: none;
+										display: block;
+										width: 100%;
+										height: 100%;
+									"
+								>
+									<g class="style-scope tp-yt-iron-icon">
+										<path
+											d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+											class="style-scope tp-yt-iron-icon"
+										></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+						<div class="breakline"></div>
+						<div>New Creator Tips</div>
+						<div class="breakline"></div>
+						<div>
+							Changes to OACs and Community Guideline strikes
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

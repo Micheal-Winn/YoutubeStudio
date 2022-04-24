@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    padding: 12px 30px 12px 23px;
+}
+
+/* left logo*/
+
+.leftLogo, .rightLogo {
+    display: flex;
+}
+.svg-logo {
+    width: 25px;
+    height: 25px;
+}
+.svg-logo path {
+    fill: white;
+}
+.op path {
+    opacity: .7;
+}
+.imgLogo {
+    margin-left: 1.4rem;
+}
+.imgLogo img {
+    width: 35%;
+}
+
+
+/* right logo*/
+.rightLogo {
+    gap: 1.4rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.pad {
+    padding: .2rem 0 0;
+}
+.create-ctr {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    outline: .2px solid rgba(255, 255, 255, .4);
+    padding: .2rem .8rem;
+}
+.red path {
+    fill: red;
+}
+.create {
+    color: white;
+}
+.userImage img {
+    width: 100%;
+    border-radius: 50px;
+}
+.userImage {
+    width: 30px;
+    height: 30px;
+}
+
+/* main container*/
+.main-ctr {
+    display: flex;
+}
+
+/*left clipboard*/
+.leftClipboard {
+    width: 20%;
+}
+.bg {
+    background-color: #282828;
+}
+/* .user-info {
+    margin: 0 auto;
+} */
+.userLogo {
+    width: 140px;
+    margin: 1rem auto .9rem;
+}
+.userLogo .profile {
+    width: 100%;
+    border-radius: 100px;
+}
+.col {
+    color: white;
+}
+.op2 {
+    opacity: .4;
+}
+.fonts {
+    font-size: 1rem;
+} 
+.fonts2 {
+    font-size: .9rem;
+}
+.ta {
+    text-align: center;
+}
+.mgb {
+    margin-bottom: .4rem;
+}
+
+/*right clipboard*/
+.rightClipboard {
+    width: 80%;
+}
+
