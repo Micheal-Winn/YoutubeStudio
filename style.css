@@ -114,9 +114,74 @@ header {
 .mgb {
     margin-bottom: .4rem;
 }
+.logo-container {
+    padding: 1.1rem 1.3rem;
+    /* overflow: auto; */
+    /* width: 247px; */
+    height: 400px;
+    overflow: auto;
+    margin: 1.3rem 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.3rem;
+
+}
+.no-mg {
+    margin: 0;
+}
+.svg {
+    width: 28px;
+    height: 28px;
+}
+.logo-width {
+    width: 100%;
+}
+.logo-width path {
+    fill: white;
+    opacity: .5;
+}
+
+.logoName {
+    font-size: .9rem;
+}
+
+.break-line {
+    height: .07px;
+    background-color: rgba(211, 211, 211, .2);
+    margin-bottom: 1.4rem;
+}
+.pd2 {
+    padding-left: 1.1rem;
+}
+.mgb2 {
+    margin-bottom: 1.5rem;
+}
 
 /*right clipboard*/
 .rightClipboard {
     width: 80%;
+    background-color: #1F1F1F;
+    padding: 1.2rem .5rem .6rem 1rem;
 }
-
+.top-channel-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: #282828;
+    border-radius: 50px;
+    padding: .3rem;
+}
+.icon-container {
+    display: flex;
+    gap: .7rem;
+}
