@@ -102,6 +102,9 @@ header {
 .op2 {
     opacity: .4;
 }
+.op3 {
+    opacity: .55;
+}
 .fonts {
     font-size: 1rem;
 } 
@@ -116,8 +119,7 @@ header {
 }
 .logo-container {
     padding: 1.1rem 1.3rem;
-    /* overflow: auto; */
-    /* width: 247px; */
+    border-bottom: .07px solid rgba(211, 211, 211, .2);
     height: 400px;
     overflow: auto;
     margin: 1.3rem 0;
@@ -164,24 +166,166 @@ header {
 .rightClipboard {
     width: 80%;
     background-color: #1F1F1F;
-    padding: 1.2rem .5rem .6rem 1rem;
+    padding: 1.9rem .5rem .6rem 1.7rem;
+    height: 980px;
+    overflow: auto;
 }
 .top-channel-wrapper {
     display: flex;
     justify-content: space-between;
+    padding-inline: .5rem 2rem;
+    margin-bottom: 2rem;
 }
 .dashboard {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 .icon {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     background-color: #282828;
     border-radius: 50px;
     padding: .3rem;
 }
 .icon-container {
     display: flex;
-    gap: .7rem;
+    gap: .9rem;
+}
+
+#uss {
+    opacity: .5;
+}
+
+/* main wrapper*/
+.second-main-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 4%;
+}
+.wrapper , .studio {
+    width: 30%;
+}
+.wrapper ,.studio {
+    background-color: #282828;
+    border-radius: 4px;
+}
+.inner-wrapper, .wrapper, .studio{
+    outline: 1px solid  rgba(211, 211, 211, .2);
+
+}
+.pd4 {
+    padding: 6rem 0;
+}
+.pd3 {
+    padding: .5rem;
+}
+
+.image-container {
+    width: 200px;
+    margin: 0 auto;
+}
+.metric {
+    opacity: .6;
+}
+.btn {
+    width: 50%;
+    height: 100px;
+    margin: 2rem auto 0;
+}
+.btn button:hover {
+    cursor: pointer;
+}
+.btn button {
+    background-color: #3EA6FF;
+    font-size: 1rem;
+    font-weight: 545;
+    padding: .7rem .8rem;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.analytics , .creater,.studio{
+    padding: 1.5rem;
+}
+.fonts3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.mgb3 {
+    margin-bottom: 1.2rem;
+}
+.week {
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+.zero {
+    font-size: 2.1rem;
+    margin-bottom: 1.8rem;
+}
+.conclu {
+    font-size: 1.1rem;
+}
+.fws {
+    
+    font-weight: 550;
+}
+.view-count {
+    display: flex;
+    justify-content: space-between;
+}
+.dash {
+    padding-left: 10px;
+}
+.line-marg {
+    margin: 1.5rem 0 1.5rem;
+}
+.last  {
+    margin-bottom: 2rem;
+}
+.refer {
+    color: #3EA6FF;
+    font-weight: 600;
+}
+
+
+.thumbnail-container {
+    margin: 4px 1px 1.3rem;
+}
+.tempo {
+width: 100%;
+}
+.insider {
+    line-height: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+
+
+.studio {
+    margin-left: auto;
+    margin-top: -7rem;
+    margin-right: 1.5rem;
+}
+.new {
+    margin-bottom: 2.1rem;
+}
+/* .iron-icon {
+    width: 25px;
+    height: 20px;
+    display: none;
+} */
+.iron-icon {
+    margin-left: auto;
+}
+.iron-icon svg {
+    width: 21px;
+    /* display: none; */
+}
+.target {
+    display: flex;
+    /* gap: .5rem; */
+}
+.mgt {
+    margin-top: 1.2rem;
 }
