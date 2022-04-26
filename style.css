@@ -310,11 +310,9 @@ width: 100%;
 .new {
     margin-bottom: 2.1rem;
 }
-/* .iron-icon {
-    width: 25px;
-    height: 20px;
+.iron-icon {
     display: none;
-} */
+}
 .iron-icon {
     margin-left: auto;
 }
@@ -322,10 +320,26 @@ width: 100%;
     width: 21px;
     /* display: none; */
 }
+.iron-icon:hover {
+    display: block;  
+}
+.hover:hover {
+    color: #3EA6FF;
+    cursor: pointer;
+}
+.iron-icon svg path {
+    fill: #3EA6FF;
+}
 .target {
     display: flex;
     /* gap: .5rem; */
 }
 .mgt {
     margin-top: 1.2rem;
+}
+
+.footer {
+    display: flex;
+    gap: 5rem;
+    margin-top: 2.6rem;
 }
