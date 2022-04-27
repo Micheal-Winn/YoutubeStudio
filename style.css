@@ -9,6 +9,8 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 /* header*/
 header {
@@ -76,6 +78,13 @@ header {
 /* main container*/
 .main-ctr {
     display: flex;
+}
+
+.rightClipboard {
+    box-sizing: border-box;
+    max-height: calc(100vh - 58.4px);
+    overflow-y: scroll;
+    /* max-width: 1510px; */
 }
 
 /*left clipboard*/
@@ -167,8 +176,7 @@ header {
     width: 80%;
     background-color: #1F1F1F;
     padding: 1.9rem .5rem .6rem 1.7rem;
-    height: 980px;
-    overflow: auto;
+    /* height: 980px; */
 }
 .top-channel-wrapper {
     display: flex;
@@ -304,14 +312,14 @@ width: 100%;
 
 .studio {
     margin-left: auto;
-    margin-top: -7rem;
+    margin-top: -6rem;
     margin-right: 1.5rem;
 }
 .new {
     margin-bottom: 2.1rem;
 }
-.iron-icon {
-    display: none;
+.iron-icon, .iron-ic {
+    opacity: 0;
 }
 .iron-icon {
     margin-left: auto;
@@ -320,19 +328,29 @@ width: 100%;
     width: 21px;
     /* display: none; */
 }
-.iron-icon:hover {
-    display: block;  
+.iron-ic svg {
+    width: 15px;
 }
+.iron-ic {
+    padding-top: .2rem;
+    margin-left: .3rem;
+}
+/* .iron-icon:hover {
+    display: block;  
+} */
 .hover:hover {
     color: #3EA6FF;
     cursor: pointer;
 }
-.iron-icon svg path {
+.iron-icon svg path, .iron-ic svg path {
     fill: #3EA6FF;
 }
 .target {
     display: flex;
     /* gap: .5rem; */
+}
+.target:hover .iron-icon,.target:hover  .iron-ic {
+    opacity: 1;
 }
 .mgt {
     margin-top: 1.2rem;
@@ -342,4 +360,7 @@ width: 100%;
     display: flex;
     gap: 5rem;
     margin-top: 2.6rem;
+}
+.op4 {
+    opacity: .7;
 }
