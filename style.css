@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #282828;
-    padding: 12px 30px 23px 23px;
+    padding: 12px 30px 12px 23px;
     position: sticky;
     top: 0;
     border-bottom: .1px solid;
@@ -28,6 +28,7 @@ header {
 
 .leftLogo, .rightLogo {
     display: flex;
+    align-items: center;
 }
 .svg-logo {
     width: 25px;
@@ -41,9 +42,10 @@ header {
 }
 .imgLogo {
     margin-left: 1.4rem;
+    height: 28px;
 }
 .imgLogo img {
-    width: 35%;
+    height: 100%;
 }
 
 
@@ -85,8 +87,10 @@ header {
 
 .rightClipboard {
     box-sizing: border-box;
-    max-height: calc(100vh - 58.4px);
+    max-height: calc(100vh - 60.5px);
     overflow-y: scroll;
+    /* overflow-x: hidden; */
+
     /* max-width: 1510px; */
 }
 
@@ -393,21 +397,63 @@ width: 100%;
         width: 25px;
         height: auto;
     }
+    /* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
     .logo-container {
         height: auto;
-        overflow: unset;
-        border-bottom: none;
-        margin-bottom: 4rem;
+        overflow: auto;
+        height: 500px;
+
+        /* border-bottom: none; */
+        /* margin-bottom: 4rem; */
     }
-
-
+    
+    .leftClipboard {
+        border-right: .07px solid rgba(211, 211, 211, .2);
+        box-sizing: border-box;
+        height: calc(100vh - 67.4px);
+    }
     .rightClipboard {
-        overflow: scroll;
+        max-height: calc(100vh - 68.5px);
+        overflow-y: scroll;
+        width: auto;
     }
+    
     .dashboard {
         font-size: 1.5rem;
     }
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
     .bottom-wrapper {
         width: calc(1140px + 10%);
+    }
+
+    .footer {
+        gap: 3rem;
+        font-size: .9rem;
+    }
+
+    /* mobile design*/
+    @media (max-width: 375px) {
+        
     }
 }
